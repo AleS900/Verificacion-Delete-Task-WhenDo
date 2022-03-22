@@ -28,7 +28,7 @@ public class WhenDoDeleteTask {
         Assertions.assertEquals(name,actualResult,"ERROR, no se pudo crear la Tarea");
 
         // Delete Task
-        taskEditingScreen.clickTaskName(name);
+        mainScreen.clickTaskName(name);
         Thread.sleep(2000);
         taskEditingScreen.deleteTaskButton.click();
         Thread.sleep(2000);

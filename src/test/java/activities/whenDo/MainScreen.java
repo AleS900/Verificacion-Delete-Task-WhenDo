@@ -13,6 +13,11 @@ public class MainScreen {
         return nameProject.isControlDisplayed();
     }
 
+    public void clickTaskName (String name) throws MalformedURLException {
+        Label nameTask = new Label(By.xpath("//android.widget.TextView[@text='"+name+"']"));
+        nameTask.click();
+    }
+
     public String getTaskName(String name) throws MalformedURLException {
         Label nameTask = new Label(By.xpath("//android.widget.TextView[@text='"+name+"']"));
         return nameTask.getText();
